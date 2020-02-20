@@ -1,0 +1,61 @@
+fontname "Source Code Pro Black:pixelsize=12"
+borderwidth 1
+color inactiveborder "#3d3d3d"
+color activeborder "#eeeeee"
+color font "#8d8d8d"
+color selfont "#1c1c1c"
+color menubg "#151515"
+color menufg "#e4e4e4"
+color groupborder "#686868"
+color ungroupborder "#7c7c7c"
+
+
+unbind-key all
+
+bind-key	CSM-q		quit
+bind-key        4S-r            restart
+bind-key        4S-c            x-www-browser
+bind-key	4S-q		window-delete
+bind-key	4-c		window-hide
+bind-key        4-r             window-raise
+bind-key        4-s             window-lower
+bind-key        4-g             window-group
+
+bind-key	4-h		window-move-left
+bind-key	4-j		window-move-down
+bind-key	4-k		window-move-up
+bind-key	4-l		window-move-right
+
+bind-key	4S-h		window-move-left-big
+bind-key	4S-j		window-move-down-big
+bind-key	4S-k		window-move-up-big
+bind-key	4S-l		window-move-right-big
+
+bind-key	4C-h		window-snap-left
+bind-key	4C-j		window-snap-down
+bind-key	4C-k		window-snap-up
+bind-key	4C-l		window-snap-right
+
+bind-key	4-y		window-resize-left
+bind-key	4-u		window-resize-down
+bind-key	4-i		window-resize-up
+bind-key	4-o		window-resize-right
+
+bind-key	4S-y		window-resize-left-big	
+bind-key	4S-u		window-resize-down-big
+bind-key	4S-i		window-resize-up-big
+bind-key	4S-o		window-resize-right-big
+
+bind-key	M-Tab	        window-cycle
+bind-key	MS-Tab          window-rcycle
+
+bind-key	4-f		window-maximize
+bind-key	4S-f		window-fullscreen
+
+command "           terminal -" "urxvt"
+command "            firefox -" "firefox-esr"
+command "	     editor  -" "emacs"
+
+bind-mouse 4-1  window-move
+bind-mouse 4-2  window-hide
+bind-mouse 4-3  window-resize
